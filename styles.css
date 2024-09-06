@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #A3A5AE;
+    font-size: 2.5em;
+    font-family: Poppins, sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    color: #4a4a4a;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-family: Poppins, sans-serif;
+}
+
+p {
+    color: #606060;
+    font-size: 1.1em;
+    font-family: Poppins, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+        "supervisor . calculator"
+        "supervisor team-builder calculator"
+        "supervisor karma calculator";
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.supervisor {
+    grid-area: supervisor;
+    align-self: center;
+    justify-self: left;
+    position: relative;
+    top: 100px;
+    left: 10px;
+    border-top: 5px solid #45D3D3;
+
+}
+
+.team-builder {
+    grid-area: team-builder;
+    align-self: start; 
+    justify-self: center;
+    position: relative;
+    bottom: 125px; 
+    border-top: 5px solid #EA5353;
+}
+
+.karma {
+    grid-area: karma;
+    align-self: end;
+    justify-self: center;
+    position: relative;
+    top: 125px;
+    border-top: 5px solid #FCAF4A;
+}
+
+.calculator {
+    grid-area: calculator;
+    align-self: center;
+    justify-self: right;
+    position: relative;
+    top: 100px;
+    right: 10px;
+    border-top: 5px solid #549EF2;
+}
+
+.block {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 240px;
+    text-align: center;
+}
+
+.block img {
+    width: 50px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 100px;
+    top: 180px;
+}
+
+.block h3 {
+    margin: 10;
+    font-size: 1.2em;
+    color: #2E2E2E;
+    position: relative;
+    bottom: 60px;
+}
+
+.block p {
+    font-size: 0.9em;
+    color: #606060;
+    position: relative;
+    bottom: 60px;
+}
+
